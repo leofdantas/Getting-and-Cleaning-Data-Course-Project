@@ -67,3 +67,4 @@ run_var_mean <- merged_short %>%
   summarize_all(funs(mean))
 
 write.csv(run_var_mean, "run_var_mean.csv", row.names = FALSE)
+write.table(run_var_mean, "run_var_mean.txt", row.names = FALSE)
